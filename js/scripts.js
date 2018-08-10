@@ -1,7 +1,5 @@
 $(document).ready(function() {
   $("form#Survey-questions").submit(function(event) {
-  event.preventDefault();
-
     var firstName = $("input#name").val();
     var City = $("#questions1").val();
     var Endtype = $("#question2").val();
@@ -20,7 +18,7 @@ $(document).ready(function() {
 
           else if (applySkills === "To work for a large company"){result = "Csharp";}
 
-            else if (applySkills === "Android Developing"){result = "Java#";}
+            else if (applySkills === "Android Developing"){result = "Java";}
 
               else if (applySkills === "Content Management"){result = "PHP";}
 
@@ -29,5 +27,6 @@ $(document).ready(function() {
     $(".hideanswers").text(result);
     $(".name#firstname").text(firstName+", we recommend you to study");
 
+  event.preventDefault();
   });
 });

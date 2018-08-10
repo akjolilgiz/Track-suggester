@@ -7,10 +7,13 @@
 }
 h1{
   text-align: center;
+  padding: 50px;
 }
 #row1{
-  background-color: red;
+  background-color: #ccccff;
   min-height: 40px;
+  margin: 20px;
+  text-align: center;
 }
 
 #frontend{
@@ -23,7 +26,12 @@ h1{
   display: none;
 }
 
-button
+button{
+  background-color: #ccccff;
+}
+#row2{
+  background-color: #d7e6e8;
+}
 
 /*.hideanswers{
   display: none;
