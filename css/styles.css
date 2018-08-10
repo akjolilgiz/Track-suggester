@@ -11,11 +11,14 @@ h1{
 #row1{
   background-color: red;
   min-height: 40px;
-  
 }
-/*#Equ,#Iso,#Sca,#nulTriangle{
-  display:none;
-}*/
+
+#frontend{
+  display: none;
+}
+#ruby{
+  display: none;
+}
 /*.hideanswers{
   display: none;
 }*/

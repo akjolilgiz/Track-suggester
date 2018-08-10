@@ -1,40 +1,21 @@
 $(document).ready(function() {
-  $("form#Identity").submit(function(event) {
+  $("form#Survey-questions").submit(function(event) {
+  event.preventDefault();
+
     var firstName = $("input#name").val();
-    var firstSide = $("input#first").val();
-    var secondSide = $("input#second").val();
-    var thirdSide = $("input#third").val();
+    var City = $("#questions1").val();
+    var Endtype = $("#question2").val();
+    var pProgramming = $("#question3").val();
+    var EventDriven = $("#question4").val();
+    var applySkills = $("#question5").val();
     var result;
-
-
-    if((firstSide+secondSide)<thirdSide ||
-    secondSide+thirdSide<firstSide||
-    firstSide+thirdSide<secondSide||
-    firstSide===0||
-    secondSide===0||
-    thirdSide===0 ) {
-    result = "Not a triangle";
-    } else if (
-       firstSide === secondSide && secondSide === thirdSide){
-       result = "Equilateral";
-    } else if (firstSide === secondSide ||
-              secondSide === thirdSide||
-              firstSide === thirdSide) {
-              result = "Isosceles";
-    }else { result = "Scalene";
-    }
-    $(".name#firstname").text(firstName+",");
+    if (City === "Other") {alert("Epicodus courses are available only in Seattle and Portland")}
+     else if (Endtype === "Front-End"){$("#frontend").show();}
+      else if (pProgramming === "No"){$("#ruby").show();}
+        else if (EventDriven === "No"){result = "Adolescense");}
 
     $(".hideanswers").text(result);
-    //  }else  {
-    //    document.write("PLEASE INPUT THE NUMBER");
-    //  }
+    $(".name#firstname").text(firstName+",");
 
-
-
-
-
-
-    event.preventDefault();
   });
 });

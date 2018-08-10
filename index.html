@@ -15,42 +15,51 @@
 
       </div>
 
-      <form id="Identity">
+      <form id="Survey-questions">
 
         <div class ="form-group">
           <label for="name">Please Enter Your Name</label>
           <input id="name" type="text">
         </div>
 
-        <label for="city">Where do you live</label>
+        <!-- <label for="city">Where do you live</label> -->
           <select class="form-control" id="questions1">
-            <option value="Seattle">Seattle</option>
-            <option value="Oregon">Oregon</option>
-            <option value="Oregon">Other</option>
-          </select>
-
-        <label for="purpose">Where do you want to apply your skills</label>
-          <select class="form-control" id="question4">
-            <option value="1">To work for a large company</option>
-            <option value="2">Android Developing</option>
-            <option value="3">Content Management</option>
-            <option value="4">Building Interactive Webpages</option>
+            <option>Seattle</option>
+            <option>Oregon</option>
+            <option>Other</option>
           </select>
 
 
-        <label for="intro">Procedural Programming</label>
-          <select class="form-control" id="question2">
-            <option value="yes">Yes</option>
-            <option value="no">No</option>
+          <label for="intro">Front-end or Back-end</label>
+            <select class="form-control" id="question2">
+              <option>Front-End</option>
+              <option>Back-End</option>
           </select>
           <p></p>
 
-        <label for="intro">Event driven programming</label>
-          <select class="Style" id="question3">
-            <option value="yes">Yes</option>
-            <option value="no">No</option>
+          <label for="intro">Procedural Programming</label>
+            <select class="form-control" id="question3">
+              <option>Yes</option>
+              <option>No</option>
           </select>
           <p></p>
+
+          <label for="intro">Event driven programming</label>
+            <select class="form-control" id="question4">
+              <option>Yes</option>
+              <option>No</option>
+          </select>
+          <p></p>
+
+          <label for="purpose">Where do you want to apply your skills</label>
+            <select class="form-control" id="question5">
+              <option>To work for a large company</option>
+              <option>Android Developing</option>
+              <option>Content Management</option>
+              <option>Building Interactive Webpages</option>
+          </select>
+
+
 
 
 
@@ -60,7 +69,12 @@
 
       <div class ="name" id = "firstname">
       </div>
-
+      <div id = "frontend">
+        <p>We recommend you to study CSS or HTML</p>
+      </div>
+      <div id = "ruby">
+        <p>We recommend you to study <a href = "https://www.ruby-lang.org/en/">Ruby</p>
+      </div>
       <div class="hideanswers">
       </div>
 
