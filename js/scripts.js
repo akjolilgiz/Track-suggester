@@ -1,13 +1,13 @@
 $(document).ready(function() {
   $("form#Identity").submit(function(event) {
+    var firstName = $("input#name").val();
     var firstSide = $("input#first").val();
     var secondSide = $("input#second").val();
     var thirdSide = $("input#third").val();
     var result;
 
-    if(isNaN(firstSide) || isNaN(thirdSide) || isNaN(secondSide)){
-       document.write("PLEASE INPUT THE NUMBER");
-    }else if((firstSide+secondSide)<thirdSide ||
+
+    if((firstSide+secondSide)<thirdSide ||
     secondSide+thirdSide<firstSide||
     firstSide+thirdSide<secondSide||
     firstSide===0||
@@ -23,6 +23,7 @@ $(document).ready(function() {
               result = "Isosceles";
     }else { result = "Scalene";
     }
+    $(".name#firstname").text(firstName+",");
 
     $(".hideanswers").text(result);
     //  }else  {
