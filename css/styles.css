@@ -14,8 +14,19 @@ h1{
   min-height: 40px;
   margin: 20px;
   text-align: center;
+  border-radius: 20px;
 }
-
+#row2{
+  background-color: #d7e6e8;
+}
+#row3{
+  width: 500px;
+  height: 200px;
+  border: 2px solid green;
+  padding: 2px;
+  margin: 2px;
+  background-color: white;
+  }
 #frontend{
   display: none;
 }
@@ -29,10 +40,20 @@ h1{
 button{
   background-color: #ccccff;
 }
-#row2{
-  background-color: #d7e6e8;
-}
 
+.clickable {
+  cursor: pointer;
+  color: #ff1a66;
+}
+img{
+  display: none;
+}
+.clickable:hover {
+  text-decoration: underline;
+}
+body{
+  background-color: #ffcc99;
+}
 /*.hideanswers{
   display: none;
 }*/
