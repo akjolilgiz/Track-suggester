@@ -11,29 +11,47 @@
     <div class="container">
       <h1>Track Suggester</h1>
       <div class="row" id = row1>
-      <p>Please take a survey to find out what programming language is best for you</p>
+      <p>Please take a survey to find out what programming language is best for you here in Epicodus</p>
 
       </div>
 
       <form id="Identity">
+
         <div class ="form-group">
           <label for="name">Please Enter Your Name</label>
           <input id="name" type="text">
         </div>
 
         <label for="city">Where do you live</label>
-        <select class="form-control" id="purpose">
-          <option value="1">Seattle</option>
-          <option value="2">Oregon</option>
-        </select>
+          <select class="form-control" id="questions1">
+            <option value="Seattle">Seattle</option>
+            <option value="Oregon">Oregon</option>
+            <option value="Oregon">Other</option>
+          </select>
 
-        <label for="purpose">Where do you want to apply</label>
-        <select class="form-control" id="purpose">
-          <option value="1">Work for a large company</option>
-          <option value="2">Android Developer</option>
-          <option value="3">Content Management</option>
-          <option value="4">Build Interactive Webpages</option>
-        </select>
+        <label for="purpose">Where do you want to apply your skills</label>
+          <select class="form-control" id="question4">
+            <option value="1">To work for a large company</option>
+            <option value="2">Android Developing</option>
+            <option value="3">Content Management</option>
+            <option value="4">Building Interactive Webpages</option>
+          </select>
+
+
+        <label for="intro">Procedural Programming</label>
+          <select class="form-control" id="question2">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+          </select>
+          <p></p>
+
+        <label for="intro">Event driven programming</label>
+          <select class="Style" id="question3">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+          </select>
+          <p></p>
+
 
 
 
@@ -42,9 +60,10 @@
 
       <div class ="name" id = "firstname">
       </div>
-      <div class="hideanswers">
 
+      <div class="hideanswers">
       </div>
+
     </div>
   </body>
 </html>
