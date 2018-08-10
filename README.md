@@ -6,11 +6,11 @@
 
 ## Description
 
-_Create a page that asks the user to take a survey and suggest which programming language is matches them best._
+_Create a page that asks the user to take a survey and suggest which programming language matches them best._
 
 ## Setup/Installation Requirements
 
-* Clone this file embedded within repository:
+* Clone this file embedded within repository: https://github.com/akjolilgiz/Track-suggester
 
 * Open file in a web browser.
 
